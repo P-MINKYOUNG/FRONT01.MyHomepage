@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* 스킵 메뉴*/
+.wrap {
+	background-color: #282828;
+	height: 100vh;
+	margin: 0px;
+  }
+
+  #skip {
+	position:relative;
+}
+
+#main-nav {
+	font-size: 100px;
+}
+
+#main-nav li:hover{
+	color : white;
+}
+
+#main-nav a{
+	color : white;
+}
