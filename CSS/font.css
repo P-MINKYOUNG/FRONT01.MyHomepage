@@ -1,6 +1,7 @@
+
 @font-face {
-    font-family: 'Mosk Extra-Bold 800';
-    font-style: normal;
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
     font-weight: normal;
-    src: local('Mosk Extra-Bold 800'), url('http://leeboa.com/portfolio2/font/Mosk Extra-Bold 800.woff') format('woff');
-    }
+    font-style: normal;
+}

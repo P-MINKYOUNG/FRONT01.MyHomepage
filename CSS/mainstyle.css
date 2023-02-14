@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* 배경 */
+body {
+	background-color: #282828;
+  }
+
+/* 메인 네비게이션 */
+.main-nav {
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	text-align: right;
+	color : white;	
+	display: flex;
+	float: right;
+}
+
+.main-nav li{
+	list-style-type: none;
+	margin-left: 5px;
+}
+
+.main-nav #navA{
+	color: white;
+	text-decoration: none;
+	margin-left: 5px;
+}
+
+.main-nav #navA:hover{
+	color: #ffb0cf;
+}
+
+.main-nav #mainName{
+	font-size: 40px;
+	text-decoration: underline;
+	margin-left: 10px;
+	margin-right: 30px;
+}
+
+.main-nav p{
+	font-size: 1rem;
+	margin-left: 5px;
+	margin-right: 30px;
+}
+
+/*메인 화면으로 돌아가기*/
+.mainDiv{
+	border : 5px solid;
+    padding : 30px;
+    width : 200px;
+	height: 200px;
+	color: white;
+	margin-top: 10px;
+	display: flex;
+	text-decoration: none;
+	text-align: left;
+}
+
+.mainDiv p{
+	color: white;
+	text-decoration: none;
+	font-size: 2.5rem;
+	margin-left: 15%;
+	margin-top: 30%;
+}
+
+.mainDiv:hover,
+p:hover{
+	color:#ffb0cf;
+}
+
+/*타이핑 화면 구현*/
+.text_box{
+	font-size: 5rem;
+	text-align: center;
+	color:white;
+	margin-top: 200px;
+	font-family: 'ONE-Mobile-POP';
+  }
+  
+  .blink {
+	animation: blink 0.5s infinite;
+	font-size: 2.5rem;
+  }
+  
+  @keyframes blink {
+	to {
+	  opacity: 0;
+	}
+  }
