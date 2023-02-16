@@ -1,21 +1,28 @@
 @charset "utf-8";
 
 /* 배경 */
-.body{
+body::-webkit-scrollbar {
+	display: none;
+  }
+
+body{
 	padding: 0%;
 	background-color: #FFE65A;
+	height: 100vh;
+	width: 100%;
+	margin: 20px;
 }
 
 .page1 {
 	height: 100vh;
   	width: 100%;
-	background-color: #FFE65A;
-  }
+}
 
 /* 메인 네비게이션 */
 .main-nav{
 	width: 100%;
 	height: 15%;
+	padding-right: 50px;
 }
 
 .main-nav ul{
@@ -23,23 +30,19 @@
 	text-align: right;
 	display: flex;
 	float: right;
-	font-family: '현';
+	font-family: '모바일팝';
 }
 
 .main-nav li{
 	list-style-type: none;
-	margin-left: 5px;
+	padding: 10px;
 }
 
 .main-nav p{
 	font-size: 1.5rem;
-	margin-left: 5px;
-	margin-right: 30px;
-	margin-top: 50px;
 	font-weight: bold;
 	color: black;
 	text-decoration: none;
-	margin-left: 5px;
 	display: block;
 }
 
@@ -57,10 +60,10 @@
 .fix1 {
 	position:fixed;
 	animation: down 0.5s ease;
-	right: 0%;
+	right: 3%;
   }
 
-.fix2{
+.fix2 {
 	position:fixed;
 	animation: down 0.5s ease;
 }
@@ -77,27 +80,18 @@
 
 /*메인 화면으로 돌아가기*/
 .mainDiv{
-	border : 5px solid;
-    padding : 30px;
     width : 120px;
 	height: 120px;
 	color: black;
 	display: block;
 	text-align: left;
-	margin: 10px;
 	font-family: '모바일팝';
-}
-
-.mainDiv p{
-	color: black;
+	padding-bottom: 50%;
 	text-decoration: none;
-	font-size: 1.5rem;
-	margin-left: -10px;
-	margin-top: 8%;
-	display: block;
+	font-size: 1.0rem;
 }
 
-.mainDiv p:hover
+.mainDiv h1:hover
 {
 	color:tomato;
 }
@@ -107,8 +101,8 @@
 	font-size: 5rem;
 	text-align: center;
 	color:#505050;
-	margin-top: 15%;
 	font-family: '오케이';
+	padding-top: 10%;
   }
   
   .blink {
@@ -122,27 +116,13 @@
 	}
   }
 
-/*발바닥*/
-#paw{
-	width: 100px;
-	height: 100px;
-	margin-top: 10%;
-	margin-left: 3%;
-}
-
 /* page2 */
-.page2{
+.phase{
 	height: 100vh;
 	width: 100%;
 	font-size: 20px;
 	box-sizing: border-box;
-	background-image: url("../img/cb6f3f5f55e9601889577bb4440a2e12.gif");
-	background-size: cover;
-}
-
-.phase{
-	padding-right: 10%;
-	padding-top: 10%;
+	line-height: 250%;
 }
 
 .eng{
@@ -157,9 +137,12 @@
 	text-align: right;
 	font-family: "모바일팝";
 	font-size: 2.0rem;
+	padding-right: 5%;
+	padding-top: 5%;
 }
 
-#span2{
+#ko4,
+#ko6{
 	font-size: 5.0rem;
 	background-color: black;
 	color: white;
@@ -171,36 +154,211 @@
   width: 100%;
   font-size: 20px;
   box-sizing: border-box;
-  background-color: #ffE150;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* column1 */
 /*이미지*/
-#about img{
-	width: 250px;
-	height: 300px;
+#column1{
+	color : black;
+	border: 5px solid;
+	height: 80%;
+	width: 90%;
+}
+
+#backend{
+	width: 40%;
+	height: 40%;
+	padding-right: 50px;
+	transform: translateX(20%);
+}
+
+#front{
+	width: 100%;
+	height: 30%;
+	padding-right: 50px;
+	transform: translateX(3%);
+}
+
+/* 폰트 */
+#column1 h1{
+	font-family: "모바일팝";
+	text-align: center;
+	font-size: 2.0rem;
+}
+
+/* column2 */
+#column2{
+	color : black;
+	border: 5px solid;
+	height: 80%;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#column2 img{
+	width: 200px;
+	height: 200px;
+	object-fit: fill;
+	position: relative;
+	top: 30px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+}
+
+#font{
+	font-family: "모바일팝";
+	text-align: center;
+	font-size: 1.0rem;
+	padding-right: 30px;
+	line-height: 650%;
+	padding-top: 80px;
+	order: 2;
+}
+
+/* column3 */
+#column3{
+	color : black;
+	border: 5px solid;
+	height: 80%;
+	width: 90%;
+}
+
+#column3 img{
+	width: 80px;
+	height: 70px;
+	padding-top: 30px;
+	transform: translateX(70%);
+}
+
+#column3 h1{
+	font-family: "모바일팝";
+	text-align: center;
+	font-size: 2.0rem;
+	order: 2;
+	padding-top: 30px;
+	padding-left: 10px;
+}
+
+#email{
+	font-family: "모바일팝";
+	vertical-align: text-top;
+	transform: translateY(-150%);
+	padding-left: 150px;
+	font-size: 1.3rem;
+}
+
+#history{
+	padding-top: 10px;
+	font-family: "모바일팝";
+	text-align: left;
+	font-size: 1.3rem;
+	line-height: 200%;
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 /*Team Project*/
 #team{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
-	background-color: #ffdc46;
-	background-size: cover;
+	display: flex;
+	box-sizing: border-box;
+	padding-left: 250px;
+	padding-top: 60px;
 }
 
-#box{
-	width: 100%;
-	height: 70%;
-	color: black;
-	border: 3px solid;
-	
+/* page 1 */
+
+#team #tdisplay{
+	height: 400px;
+	width: 600px;
+	float: left;
+	background-image: url('../img/cb6f3f5f55e9601889577bb4440a2e12.gif');
+    background-size: cover;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+
+#pbox1 h1{
+	font-family: "모바일팝";
+	font-size: 3.0rem;
+	padding-left: 80px;
+	padding-top: 60px;
+	color: #FFE65A;
+}
+
+#p1text{
+	font-family: "모바일팝";
+	font-size: 1.5rem;
+	padding-left: 100px;
+	line-height: 150%;
+	float: left;
+}
+
+#p1text span{
+	font-size: 2.0rem;
+	font-weight: bold;
+}
+
+/* 2번째 페이지 */
+#team #pbox2{
+	width: 1300px;
+	height: 700px;
+	background-color: tomato;
+}
+
+#team #tdisplay2{
+	height: 400px;
+	width: 600px;
+	float: left;
+	background-image: url('../img/cb6f3f5f55e9601889577bb4440a2e12.gif');
+    background-size: cover;
+	margin-left: 100px;
+}
+
+#pbox2 h1{
+	font-family: "모바일팝";
+	font-size: 3.0rem;
+	padding-right: 180px;
+	color: #FFE65A;
+	float: left;
+}
+
+#p2text{
+	font-family: "모바일팝";
+	font-size: 1.5rem;
+	padding-left: 100px;
+	line-height: 150%;
+	transform: translateY(0%);
+	float: left;
+}
+
+#p2text span{
+	font-size: 2.0rem;
+	font-weight: bold;
 }
 
 /*Personal Project*/
 #personal{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
-	background-color: #ffd73c;
+	display: flex;
+	padding-left: 250px;
+	padding-top: 60px
 }
+
+#pbox1{
+	width: 1300px;
+	height: 700px;
+	background-color: tomato;
+	overflow-x: hidden;
+	overflow-y: auto;
+	white-space: nowrap;
+}
+
+#pbox1::-webkit-scrollbar {
+	display: none;
+  }
