@@ -264,22 +264,43 @@ body{
 #team{
 	height: 100%;
 	width: 100%;
-	display: flex;
 	box-sizing: border-box;
 	padding-left: 250px;
 	padding-top: 60px;
 }
 
-/* page 1 */
+.tall{
+	width: 1300px;
+	height: 700px;
+	background-color: tomato;
+	float: inline-end;
+	overflow-x: hidden;
+	overflow-y: auto;
+	/* white-space: nowrap; */
+	display: flex;
+	flex-direction: column;
+}
 
-#team #tdisplay{
+.tall::-webkit-scrollbar {
+	display: none;
+  }
+
+/* page 1 */
+/* #pbox1{
+	margin: -50 0 0 -50px;
+	position: absolute;
+} */
+
+#tdisplay{
 	height: 400px;
 	width: 600px;
 	float: left;
 	background-image: url('../img/cb6f3f5f55e9601889577bb4440a2e12.gif');
     background-size: cover;
 	margin-top: 30px;
-	margin-left: 100px;
+	position: relative;
+	margin-left: 60px;
+
 }
 
 #pbox1 h1{
@@ -293,9 +314,11 @@ body{
 #p1text{
 	font-family: "모바일팝";
 	font-size: 1.5rem;
-	padding-left: 100px;
+	margin-left: 80px;
 	line-height: 150%;
-	float: left;
+	float: right;
+	padding-right: 200px;
+	margin-top: 10px;
 }
 
 #p1text span{
@@ -304,36 +327,39 @@ body{
 }
 
 /* 2번째 페이지 */
-#team #pbox2{
-	width: 1300px;
-	height: 700px;
-	background-color: tomato;
-}
+/* #pbox2{
+	margin: 500 0 0 500px;
+	position: absolute;
+} */
 
-#team #tdisplay2{
+#tdisplay2{
 	height: 400px;
 	width: 600px;
 	float: left;
 	background-image: url('../img/cb6f3f5f55e9601889577bb4440a2e12.gif');
     background-size: cover;
-	margin-left: 100px;
+	margin-top: 30px;
+	position: relative;
+	margin-left: 60px;
 }
 
 #pbox2 h1{
 	font-family: "모바일팝";
 	font-size: 3.0rem;
-	padding-right: 180px;
+	padding-left: 80px;
+	padding-top: 120px;
 	color: #FFE65A;
-	float: left;
+	margin-top: 40px;
 }
 
 #p2text{
 	font-family: "모바일팝";
 	font-size: 1.5rem;
-	padding-left: 100px;
+	margin-left: 80px;
 	line-height: 150%;
-	transform: translateY(0%);
-	float: left;
+	float: right;
+	padding-right: 200px;
+	margin-bottom: 100px;
 }
 
 #p2text span{
@@ -349,16 +375,3 @@ body{
 	padding-left: 250px;
 	padding-top: 60px
 }
-
-#pbox1{
-	width: 1300px;
-	height: 700px;
-	background-color: tomato;
-	overflow-x: hidden;
-	overflow-y: auto;
-	white-space: nowrap;
-}
-
-#pbox1::-webkit-scrollbar {
-	display: none;
-  }

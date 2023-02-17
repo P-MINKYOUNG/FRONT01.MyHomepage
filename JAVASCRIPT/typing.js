@@ -14,6 +14,7 @@ setInterval(() => {
         console.log($text.textContent = after);
         i++;
     }
+
 }, 100);
 }());
 
@@ -86,8 +87,6 @@ $b.addEventListener('click', () => window.scrollTo({top: locationB - top, behavi
 
 /* 내용 스크롤 */
 (function(){
-    const $phase = document.querySelector('.phase');
-    const $about = document.getElementById('about');
     const $ko1 = document.getElementById('ko1');
     const $ko2 = document.getElementById('ko2');
     const $ko3 = document.getElementById('ko3');
